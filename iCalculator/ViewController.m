@@ -145,7 +145,7 @@
 }
 
 - (void)setResultWithNumber:(int)number {
-    if (_isDecimal) {
+    if (!_isDecimal) {
         _display *= 10;
         _display += number;
         self.resultLabel.text = [NSString stringWithFormat:@"%.0f", _display];
