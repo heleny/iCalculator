@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, Operation) {
 
 
 - (IBAction)ac:(id)sender;
-- (IBAction)plusMinus:(id)sender;
+- (IBAction)togglePlusMinus:(id)sender;
 - (IBAction)divide:(id)sender;
 - (IBAction)multiply:(id)sender;
 - (IBAction)substract:(id)sender;
@@ -45,9 +45,6 @@ typedef NS_ENUM(NSInteger, Operation) {
 - (IBAction)two:(id)sender;
 - (IBAction)one:(id)sender;
 - (IBAction)zero:(id)sender;
-
-- (void)setResultWithNumber:(int)number;
-- (void)numberWithOperation:(Operation)operation;
 
 @end
 

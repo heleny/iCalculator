@@ -16,17 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     _isDecimal = false;
     _result = 0;
+    _display = 0;
     self.resultLabel.adjustsFontSizeToFitWidth = TRUE;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - IBActions
 
 - (IBAction)ac:(id)sender {
     _result = 0;
@@ -35,7 +36,7 @@
     self.resultLabel.text = @"0";
 }
 
-- (IBAction)plusMinus:(id)sender {
+- (IBAction)togglePlusMinus:(id)sender {
     _display = _display * (-1);
     if (_display < 0) {
         self.resultLabel.text = [@"-" stringByAppendingString:self.resultLabel.text];
@@ -143,6 +144,8 @@
 - (IBAction)zero:(id)sender {
     [self setResultWithNumber:0];
 }
+
+#pragma mark - Helper Functions
 
 - (void)setResultWithNumber:(int)number {
     if (!_isDecimal) {
