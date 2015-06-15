@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, Operation) {
 - (IBAction)plusMinus:(id)sender;
 - (IBAction)divide:(id)sender;
 - (IBAction)multiply:(id)sender;
-- (IBAction)subsctract:(id)sender;
+- (IBAction)substract:(id)sender;
 - (IBAction)add:(id)sender;
 - (IBAction)equal:(id)sender;
 - (IBAction)dot:(id)sender;

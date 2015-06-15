@@ -156,7 +156,7 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                         <state key="normal" title="-"/>
                                         <connections>
-                                            <action selector="subsctract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWC-qi-7va"/>
+                                            <action selector="substract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzg-Q2-bZn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOc-ta-Jo3">

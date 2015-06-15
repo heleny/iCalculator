@@ -67,7 +67,7 @@
     
     [self numberWithOperation:Multiply];}
 
-- (IBAction)subsctract:(id)sender {
+- (IBAction)substract:(id)sender {
     if (_result != 0) {
         [self numberWithOperation:_operation];
         self.resultLabel.text = [NSString stringWithFormat:@"%.2f", _result];
